@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-python-config
+data:
+  db_user: api-python-user
+  db_password: api-python-user

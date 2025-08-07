@@ -1,0 +1,12 @@
+docker-compose.yml
+Dockerfile
+README.md
+_pycache_
+__pycache__
+Lib/
+Scripts/
+Include/
+db/
+pyvenv.cfg
+k8s/
+.dockerignore

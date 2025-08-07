@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql
+data:
+  MYSQL_ROOT_PASSWORD: "root"
+  MYSQL_DATABASE: "api-python"
+  MYSQL_USER: "api-python-user"        
+  MYSQL_PASSWORD: "api-python-user"
