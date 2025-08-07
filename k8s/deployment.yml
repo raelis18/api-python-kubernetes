@@ -26,12 +26,18 @@ spec:
       - name: api-python
         image: rael18/api-python:v4.2
         imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "192Mi"
+            cpu: "200m"
         envFrom:
          - configMapRef:
              name: api-python-config
         ports:
         - containerPort: 5000
-
         livenessProbe:
           httpGet:
             path: /status
@@ -49,12 +55,6 @@ spec:
           periodSeconds: 10
           timeoutSeconds: 10
 
-      resources:
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
-          limits:
-            memory: "192Mi"
-            cpu: "200m"
+
       
       
